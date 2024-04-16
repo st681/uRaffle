@@ -1,8 +1,10 @@
 from readTasks import readTasks
 from processors import processorMapping
 from termcolor import colored
+import asyncio
+import nodriver as uc
 
-def chooseProcessor():
+async def chooseProcessor():
     print(colored('Available Raffle Processors:', 'magenta'))
     for idx, name in enumerate(processorMapping, start=1):
         print(colored(f"{idx}. {name}",'magenta'))
@@ -16,7 +18,7 @@ def chooseProcessor():
         print(colored('Invalid selection. Please try again.', 'red'))
         return chooseProcessor()
     
-def main():
+async def main():
     print('''
 ██████╗░░█████╗░███████╗███████╗██╗░░░░░███████╗  ░█████╗░░█████╗░░█████╗░██╗░░██╗███████╗██████╗░
 ██╔══██╗██╔══██╗██╔════╝██╔════╝██║░░░░░██╔════╝  ██╔══██╗██╔══██╗██╔══██╗██║░██╔╝██╔════╝██╔══██╗
@@ -26,9 +28,9 @@ def main():
 ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░░░░╚═╝░░░░░╚══════╝╚══════╝  ░╚════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝
         ''')
     print(colored('made by stupit\n', 'blue'))
-    processor = chooseProcessor()
+    processor = await chooseProcessor()
     bot = readTasks('tasks.csv', processor)
-    bot.processEntries()
+    await bot.processEntries()
 
 if __name__ == "__main__":
-    main()
+    uc.loop().run_until_complete(main())

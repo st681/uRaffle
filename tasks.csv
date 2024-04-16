@@ -1,11 +1,2 @@
 email,first,last,address1,address2,city,state,zip,country,proxy
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
-testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,192.168.0.1:54440:user:pass
+testing123@gmail.com,john,smith,123 street St,APT 101,Atlanta,Georgia,30033,United States,geo.iproyal.com:12321:stupitcooks:password_country-us_session-o2hF44Pq_lifetime-5m
